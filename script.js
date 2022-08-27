@@ -13,11 +13,13 @@ function buttonAdd () {
         let myError = document.getElementById("error")
         myError.innerHTML = "Можно ввести максимум 5 дел!"
     } else {
-    let myList = document.getElementById("list")
-    let myInput = document.getElementById("text")
-    let value = myInput.value
+        let myList = document.getElementById("list")
+        let myInput = document.getElementById("text")
+        let value = myInput.value
     
     myList.innerHTML = myList.innerHTML + "<li>" + value + "</li>"
+
+        myInput.value = ""
     }
     
 }
